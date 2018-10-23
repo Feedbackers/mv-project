@@ -1,0 +1,42 @@
+@mixin bp ($type) {
+  @if $type == phone {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @else if $type == phone-small {
+    @media only screen and (max-width: 460px) {
+      @content;
+    }
+  }
+  @else if $type == tablet {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+  @else if $type == tablet-land {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      @content;
+    }
+  }
+  @else if $type == tablet-port {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+      @content;
+    }
+  }
+  @else if $type == desk {
+    @media only screen and (min-width: 1025px) {
+      @content;
+    }
+  }
+
+  @else if $type == to-desk {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports only: phone, phone-small, tablet, tablet-land, tablet-port, desk, to-desk";
+  }
+}
