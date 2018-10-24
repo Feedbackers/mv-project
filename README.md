@@ -9,7 +9,7 @@ A project for Marija to get some guidance. That is all. Carry on.
 Download to your project directory:
 
 ```sh
-  git clone git@github.com:Feedbackers/mv-project.git && cd mv-project npm install
+  git clone git@github.com:Feedbackers/mv-project.git && cd mv-project && npm install
 ```
 
 After the installation has finished, start the project by running the command:
