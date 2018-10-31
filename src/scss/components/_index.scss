@@ -1,0 +1,98 @@
+/*main styles*/
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 90vw;
+  background-color: map-deep($colors, white);
+  box-sizing: border-box;
+}
+
+.main-content {
+  font-family: 'Roboto Slab', serif;
+  @include bp(phone) {
+    font-size: 2.8vw;
+  }
+}
+
+/*---practice-areas---*/
+
+.practice-areas {
+  &__title {
+    font-size: 3rem;
+    line-height: 1.8;
+    color: map-deep($colors, blue);
+    border-bottom: 1px solid map-deep($colors, greylight);
+    margin: 2rem 0;
+  }
+}
+
+.deck-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  @include bp(tablet) {
+      grid-template-columns: none;
+  }
+
+  @include bp(phone) {
+      grid-template-columns: none;
+  }
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  color: map-deep($colors, white);
+  background-color: map-deep($colors, blue);
+
+    &__image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.3;
+    }
+
+    &__image:hover {
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+
+    &__title {
+      font-size: 3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+
+    &__learnmore {
+      width: 0;
+      height: 0;
+      border-bottom: 5rem solid map-deep($colors, orange);
+      border-left: 5rem solid transparent;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      text-indent: -999rem;
+      text-decoration: none;
+
+      &--plus {
+        font-size: 2rem;
+        position: absolute;
+        right: .8rem;
+        bottom: .4rem;
+        cursor: pointer;
+      }
+
+      &--plus:hover {
+      color: map-deep($colors, blue);
+      transition: all 0.5s ease;
+      }
+    }/*---END __learnmore---*/
+}/*---END card---*/
+
+/*---END practice-areas---*/

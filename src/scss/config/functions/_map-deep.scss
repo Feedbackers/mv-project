@@ -1,6 +1,6 @@
 /**
 	Example:
-		background-color: color(main);
+		background-color: map-deep($colors, nesto, sec);
 */
 
 @function map-deep($map, $keys...) {
