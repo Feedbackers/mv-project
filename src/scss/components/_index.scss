@@ -2,7 +2,7 @@
 
 body {
   margin: 0 auto;
-  padding: 0;
+  padding: 3rem 0;
   max-width: 90vw;
   background-color: map-deep($colors, white);
   box-sizing: border-box;
@@ -10,22 +10,83 @@ body {
 
 .main-content {
   font-family: 'Roboto Slab', serif;
+  margin: 0 auto;
   @include bp(phone) {
     font-size: 2.8vw;
   }
 }
 
-/*---practice-areas---*/
 
-.practice-areas {
+/*main styles ------*/
+
+.main {
   &__title {
     font-size: 3rem;
     line-height: 1.8;
-    color: map-deep($colors, blue);
-    border-bottom: 1px solid map-deep($colors, greylight);
     margin: 2rem 0;
+    text-align: center;
+    color: map-deep($colors, blue);
+
+    &--left {
+      border-bottom: 1px solid map-deep($colors, greylight);
+      text-align: left;
+    }
   }
+  &__paragraph {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 0 3rem 0;
+    color: map-deep($colors, blue);
+  }
+  &__btn {
+    padding: 1.2rem;
+    border: none;
+    background: map-deep($colors, orange);
+    color: map-deep($colors, white);
+    cursor: pointer;
+
+    &--help {
+      grid-column: 2 / 3;
+      width: 15rem;
+      justify-self: center;
+
+      @include bp(phone) {
+        grid-column: auto;
+      }
+    }
+    }
+    &__btn:hover {
+      background: map-deep($colors, blue);
+      transition: all 0.5s ease;
+      }
 }
+
+/*Form------*/
+
+.form {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 1.6rem;
+
+    &__input {
+      padding: 1.2rem;
+      border: none;
+      background: map-deep($colors, greylight);
+      color: map-deep($colors, greydark);
+
+      &--full {
+        grid-column: 1 / 4;
+        @include bp(phone) {
+          grid-column: auto;
+        }
+      }
+    }
+}
+
+/*.practice-areas---*/
 
 .deck-cards {
   display: grid;
@@ -33,11 +94,11 @@ body {
   grid-gap: 1rem;
 
   @include bp(tablet) {
-      grid-template-columns: none;
+    grid-template-columns: none;
   }
 
   @include bp(phone) {
-      grid-template-columns: none;
+    grid-template-columns: none;
   }
 }
 
@@ -89,10 +150,27 @@ body {
       }
 
       &--plus:hover {
-      color: map-deep($colors, blue);
-      transition: all 0.5s ease;
+        color: map-deep($colors, blue);
+        transition: all 0.5s ease;
       }
-    }/*---END __learnmore---*/
-}/*---END card---*/
+    }/*END __learnmore---*/
+}/*END .card---*/
 
-/*---END practice-areas---*/
+
+.consultation-form {
+  &__link {
+    max-width: 25rem;
+    margin: 0 auto 4rem;
+    display: block;
+    padding: 3rem 2rem;
+    background: map-deep($colors, blue);
+    color: map-deep($colors, white);
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+  }
+  &__link:hover {
+    background: map-deep($colors, orange);
+    transition: all 0.5s ease;
+  }
+}

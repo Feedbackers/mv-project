@@ -8,12 +8,25 @@
   <title>Marijin test</title>
   <link rel="stylesheet" href="./src/scss/main.scss">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 </head>
 
 <body>
 <main class="main-content">
+  <div class="report-form">
+    <h1 class="main__title">Illa argumenta propria videamus</h1>
+    <p class="main__paragraph">Bonum integritas corporis: misera debilitas. At multis malis affectus. Ne discipulum abducam, times.</p>
+    <form class="form" autocomplete="on">
+      <input class="form__input" type="text" name="fullname" value="Full Name">
+      <input class="form__input" type="text" name="emailaddress" value="Email Address">
+      <button class="main__btn main__btn--download" type="button">
+        <i class="fas fa-download"></i>
+        Download
+      </button>
+    </form>
+  </div><!--end .report-form-->
   <div class="practice-areas">
-    <h1 class="practice-areas__title">Our Practice Areas</h1>
+    <h1 class="main__title main__title--left">Our Practice Areas</h1>
     <section class="deck-cards">
         <figure class="card">
           <img src="https://placekitten.com/300/170" class="card__image"/>
@@ -53,6 +66,24 @@
         </figure>
     </section><!--end .practice-areas__cards-->
   </div><!--end .deck-cards-->
+  <div class="consultation-form">
+    <h1 class="main__title">Habent admirationis</h1>
+    <p class="main__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Polycratem Samium felicem appellabant. Duo Reges: constructio interrete. Sed ad bona praeterita redeamus. </p>
+    <a class="consultation-form__link" href="callto:1234567">Call 123-4567</a>
+    <form class="form" autocomplete="on">
+      <input class="form__input" type="text" name="fullname" value="Full Name">
+      <input class="form__input" type="text" name="emailaddress" value="Email Address">
+      <select class="form__input" name="cars">
+        <option value="volvo">iudicem</option>
+        <option value="saab">aequum</option>
+        <option value="fiat">modo</option>
+      </select>
+      <textarea class="form__input form__input--full" name="textarea" rows="5" cols="30" minlength="10" maxlength="20">Write something here</textarea>
+      <button class="main__btn main__btn--help" type="button">
+        Get help today
+      </button>
+    </form>
+  </div><!--end .report-form-->
 </main><!--end .main-content-->
 </body>
 
