@@ -1,0 +1,17 @@
+.consultation-form {
+  &__link {
+    max-width: 25rem;
+    margin: 0 auto 4rem;
+    display: block;
+    padding: 3rem 2rem;
+    background: map-deep($colors, blue);
+    color: map-deep($colors, white);
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+  }
+  &__link:hover {
+    background: map-deep($colors, orange);
+    transition: all 0.5s ease;
+  }
+}

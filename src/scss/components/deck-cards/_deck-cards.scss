@@ -1,0 +1,13 @@
+.deck-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  @include bp(tablet) {
+    grid-template-columns: none;
+  }
+
+  @include bp(phone) {
+    grid-template-columns: none;
+  }
+}

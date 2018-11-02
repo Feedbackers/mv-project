@@ -1,0 +1,21 @@
+.form {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 1.6rem;
+
+    &__input {
+      padding: 1.2rem;
+      border: none;
+      background: map-deep($colors, greylight);
+      color: map-deep($colors, greydark);
+
+      &--full {
+        grid-column: 1 / 4;
+        @include bp(phone) {
+          grid-column: auto;
+        }
+      }
+    }
+}

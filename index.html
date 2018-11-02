@@ -13,21 +13,46 @@
 
 <body>
 <main class="main-content">
-  <div class="report-form">
-    <h1 class="main__title">Illa argumenta propria videamus</h1>
-    <p class="main__paragraph">Bonum integritas corporis: misera debilitas. At multis malis affectus. Ne discipulum abducam, times.</p>
+  <section class="our-lawyers">
+    <h1 class="title">Our Lawyers</h1>
+    <p class="paragraph">Bonum integritas corporis: misera debilitas.</p>
+    <div class="our-lawyers__card">
+    <div class="our-lawyers__description">
+      <h1 class="our-lawyers__title">Our Lawyers</h1>
+      <p class="our-lawyers__paragraph--">Bonum integritas</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Polycratem Samium felicem appellabant. Duo Reges: constructio interrete. </p>
+      <ul>
+        <li><i class="fas fa-phone"></i> Tel: 123456789</li>
+        <li><i class="fas fa-fax"></i>Fax: 1234556789</li>
+        <li><i class="far fa-envelope"></i>lala@gmail.com</li>
+        <li>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-google-plus-g"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="our-lawyers__img">
+      <img src="https://placekitten.com/350/350" class="card__image"/>
+    </div>
+  </div>
+</section><!--end .our-lawyers-->
+  <section class="report-form">
+    <h1 class="title">Illa argumenta propria videamus</h1>
+    <p class="paragraph">Bonum integritas corporis: misera debilitas. At multis malis affectus. Ne discipulum abducam, times.</p>
     <form class="form" autocomplete="on">
       <input class="form__input" type="text" name="fullname" value="Full Name">
       <input class="form__input" type="text" name="emailaddress" value="Email Address">
-      <button class="main__btn main__btn--download" type="button">
+      <button class="btn btn--download" type="button">
         <i class="fas fa-download"></i>
         Download
       </button>
     </form>
-  </div><!--end .report-form-->
-  <div class="practice-areas">
-    <h1 class="main__title main__title--left">Our Practice Areas</h1>
-    <section class="deck-cards">
+  </section><!--end .report-form-->
+  <section class="practice-areas">
+    <h1 class="title title--left">Our Practice Areas</h1>
+    <div class="deck-cards">
         <figure class="card">
           <img src="https://placekitten.com/300/170" class="card__image"/>
           <figcaption class="card__title">Cui Tubuli</figcaption>
@@ -64,11 +89,11 @@
           <a class="card__learnmore" href="#" title="Learn more">Learn more</a>
           <p class="card__learnmore--plus">+</p>
         </figure>
-    </section><!--end .practice-areas__cards-->
-  </div><!--end .deck-cards-->
-  <div class="consultation-form">
-    <h1 class="main__title">Habent admirationis</h1>
-    <p class="main__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Polycratem Samium felicem appellabant. Duo Reges: constructio interrete. Sed ad bona praeterita redeamus. </p>
+    </div><!--end .practice-areas__cards-->
+  </section><!--end .deck-cards-->
+  <section class="consultation-form">
+    <h1 class="title">Habent admirationis</h1>
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Polycratem Samium felicem appellabant. Duo Reges: constructio interrete. Sed ad bona praeterita redeamus. </p>
     <a class="consultation-form__link" href="callto:1234567">Call 123-4567</a>
     <form class="form" autocomplete="on">
       <input class="form__input" type="text" name="fullname" value="Full Name">
@@ -79,11 +104,11 @@
         <option value="fiat">modo</option>
       </select>
       <textarea class="form__input form__input--full" name="textarea" rows="5" cols="30" minlength="10" maxlength="20">Write something here</textarea>
-      <button class="main__btn main__btn--help" type="button">
+      <button class="btn btn--help" type="button">
         Get help today
       </button>
     </form>
-  </div><!--end .report-form-->
+  </section><!--end .report-form-->
 </main><!--end .main-content-->
 </body>
 

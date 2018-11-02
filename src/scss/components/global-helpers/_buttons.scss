@@ -1,0 +1,23 @@
+.btn {
+    padding: 1.2rem;
+    border: none;
+    background: map-deep($colors, orange);
+    color: map-deep($colors, white);
+    cursor: pointer;
+
+    &--help {
+      grid-column: 2 / 3;
+      width: 15rem;
+      justify-self: center;
+
+      @include bp(phone) {
+        grid-column: auto;
+      }
+    }
+
+    .btn:hover {
+      background: map-deep($colors, blue);
+      transition: all 0.5s ease;
+      }
+
+}

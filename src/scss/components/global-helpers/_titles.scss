@@ -1,0 +1,12 @@
+.title {
+    font-size: 3rem;
+    line-height: 1.8;
+    margin: 2rem 0;
+    text-align: center;
+    color: map-deep($colors, blue);
+
+    &--left {
+      border-bottom: 1px solid map-deep($colors, greylight);
+      text-align: left;
+    }
+  }
