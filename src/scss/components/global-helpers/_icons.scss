@@ -1,0 +1,8 @@
+.ico-background {
+  border-radius: 50%;
+ width: 20px;
+ height: 20px;
+ padding: 5px;
+ background: map-deep($colors, blue);
+ color: map-deep($colors, white);
+}

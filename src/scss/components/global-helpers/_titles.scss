@@ -10,3 +10,13 @@
       text-align: left;
     }
   }
+.paragraph {
+  &__title {
+    font-size: 2rem;
+  }
+  &__subtitle {
+    font-size: 1rem;
+    line-height: 2.6;
+    color: map-deep($colors, greylight);
+  }
+}
