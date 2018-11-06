@@ -1,0 +1,29 @@
+.global-lawyers {
+  &__img {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.6rem;
+    justify-content: center;
+    @include bp(tablet) {
+      grid-template-columns: none;
+    }
+    @include bp(phone) {
+      grid-template-columns: none;
+    }
+  }
+}
+.purpose {
+    &_info {
+      border: 1px solid map-deep($colors, blue);
+      margin: 0 0 1rem 0;
+      padding: .2rem .2rem .2rem 1rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      }
+}

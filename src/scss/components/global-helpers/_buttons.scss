@@ -4,8 +4,11 @@
     background: map-deep($colors, orange);
     color: map-deep($colors, white);
     cursor: pointer;
-
-    &--help {
+    .btn:hover {
+      background: map-deep($colors, blue);
+      transition: all 0.5s ease;
+      }
+    &--orange {
       grid-column: 2 / 3;
       width: 15rem;
       justify-self: center;
@@ -15,9 +18,6 @@
       }
     }
 
-    .btn:hover {
-      background: map-deep($colors, blue);
-      transition: all 0.5s ease;
-      }
+
 
 }

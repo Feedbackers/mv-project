@@ -2,19 +2,28 @@
   position: relative;
   text-align: center;
   color: map-deep($colors, white);
-  background-color: map-deep($colors, blue);
+    &__lala {
+      background-color: rgba(0,0,255,.3);
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      display: block;
+      z-index:0;
+      transition: all 0.5s ease;
+      &:hover {
+        background-color: rgba(0,0,255,.7);
+      }
+    }
 
     &__image {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      opacity: 0.3;
-    }
-
-    &__image:hover {
-      opacity: 1;
-      transition: all 0.5s ease;
+      background-color: map-deep($colors, blue);
+      z-index:1;
     }
 
     &__title {
@@ -26,7 +35,7 @@
       cursor: pointer;
     }
 
-    &__learnmore {
+    &__more {
       width: 0;
       height: 0;
       border-bottom: 5rem solid map-deep($colors, orange);
@@ -34,20 +43,19 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      text-indent: -999rem;
       text-decoration: none;
+      color: map-deep($colors, white);
 
       &--plus {
-        font-size: 2rem;
+        font-size: 2.2rem;
         position: absolute;
-        right: .8rem;
-        bottom: .4rem;
+        right: 1.1rem;
+        bottom: -4.6rem;
         cursor: pointer;
-      }
-
-      &--plus:hover {
-        color: map-deep($colors, blue);
         transition: all 0.5s ease;
+        &:hover {
+          color: map-deep($colors, blue);
+        }
       }
     }/*END __learnmore---*/
 }/*END .card---*/

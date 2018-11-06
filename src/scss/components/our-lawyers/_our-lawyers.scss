@@ -7,30 +7,30 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.6rem;
     border: 1px solid map-deep($colors, orange);
-    grid-template-areas: "lawyers-description lawyers-image";
-     @include bp(phone) {
-       grid-template-areas: "lawyers-image"
-                            "lawyers-description";
-       grid-template-columns: none;
-       padding: 2rem;
+    grid-template-areas: "description image";
+    @include bp(phone) {
+      grid-template-areas: "image"
+                          "description";
+      grid-template-columns: none;
+      padding: 2rem;
      }
-  }
+   }
 
     &__description {
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-    width: 20rem;
-    line-height: 1.6;
-    grid-area: lawyers-description;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      width: 20rem;
+      line-height: 1.6;
+      grid-area: description;
     }
 
-  &__img {
-      grid-area: lawyers-image;
+    &__img {
+      grid-area: image;
       justify-self: center;
       margin: -5rem 0 2rem 0;
-       @include bp(phone) {
-         margin: 0 auto;
-       }
+      @include bp(phone) {
+        margin: 0 auto;
+      }
   }
 }
