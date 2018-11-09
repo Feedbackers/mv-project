@@ -1,12 +1,11 @@
 body {
-  padding: 3rem 0;
-}
-
-.main-content {
-  max-width: 90vw;
   font-family: 'Roboto Slab', serif;
+}
+.main-content {
+  max-width: 90rem;
   margin: 0 auto;
   @include bp(phone) {
+      max-width: 90vw;
     font-size: 2.8vw;
   }
 }

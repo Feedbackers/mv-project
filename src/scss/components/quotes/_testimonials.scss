@@ -1,0 +1,16 @@
+
+.testimonials-quote {
+  font-weight: 900;
+  font-size: 62px;
+  color: #77a9dd;
+}
+.description {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 1rem;
+}

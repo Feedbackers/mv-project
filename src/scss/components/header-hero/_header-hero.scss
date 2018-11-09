@@ -1,0 +1,63 @@
+.color-bg {
+  background-color: map-deep($colors, greylight);
+  padding: 5rem 0 0 0;
+}
+
+.header-hero {
+  width: 90rem;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.6rem;
+  @include bp(phone) {
+    width: 90%;
+    align-items: center;
+    grid-template-columns: none;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+
+  &__quote {
+    padding: 0 4rem;
+  }
+  &__paragraph {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+}
+.hero-img {
+  width: 30rem;
+  @include bp(phone) {
+    display: none;
+  }
+}
+.hero-cards {
+  width: 90rem;
+  margin: -5rem auto 1rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1.6rem;
+  background: map-deep($colors, greydark);
+  position: relative;
+  z-index: 999;
+  @include bp(phone) {
+    width: 90%;
+    margin: 1rem 3rem;
+    grid-template-columns: none;
+  }
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-align: left;
+  align-items: center;
+  @include bp(phone) {
+    grid-template-columns: 10rem 1fr;
+  }
+}

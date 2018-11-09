@@ -13,6 +13,7 @@
       width: 15rem;
       justify-self: center;
 
+
       @include bp(phone) {
         grid-column: auto;
       }
@@ -20,4 +21,9 @@
 
 
 
+}
+.border {
+  border: 1px solid map-deep($colors, orange);
+  background: map-deep($colors, white);
+  color: map-deep($colors, orange);
 }

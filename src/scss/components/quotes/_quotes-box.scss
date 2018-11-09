@@ -1,0 +1,43 @@
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  @include bp(tablet) {
+    grid-template-columns: none;
+  }
+  @include bp(phone) {
+    grid-template-columns: none;
+  }
+}
+.quotes-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+  margin-bottom: 1rem;
+  @include bp(phone) {
+    grid-template-columns: none;
+  }
+}
+.quotes__image {
+  @include bp(phone) {
+    width: 100%;
+  }
+}
+.quotes-card {
+  &__title {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding-bottom: 1rem;
+  }
+  &__paragraph {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+}
+.quotes-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  line-height: 1.6;
+}

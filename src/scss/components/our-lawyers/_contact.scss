@@ -2,14 +2,14 @@
   align-self: center;
   justify-self: center;
 
-&_info {
-  display: grid;
-  grid-template-columns: 20px 10rem;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  line-height: 2.6;
-  text-align: left;
+  &_info {
+    display: grid;
+    grid-template-columns: 20px 10rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    line-height: 2.6;
+    text-align: left;
+  }
 
-}
 }

@@ -1,22 +1,42 @@
 .glob-title {
-    font-size: 3rem;
-    line-height: 1.8;
-    margin: 2rem 0;
-    text-align: center;
-    color: map-deep($colors, blue);
+  font-size: 3rem;
+  line-height: 1.8;
+  margin: 2rem 0;
+  text-align: center;
+  color: map-deep($colors, blue);
 
-    &--left {
-      border-bottom: 1px solid map-deep($colors, greylight);
-      text-align: left;
-    }
+  &--left {
+    border-bottom: 1px solid map-deep($colors, greylight);
+    text-align: left;
   }
-.paragraph {
-  &__title {
-    font-size: 2rem;
-  }
-  &__subtitle {
-    font-size: 1rem;
+
+}
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.8;
+  text-align: left;
+  color: map-deep($colors, blue);
+}
+.paragraph-title {
+  font-size: 2rem;
+  &--small {
     line-height: 2.6;
-    color: map-deep($colors, greylight);
+    border-bottom: 1px solid map-deep($colors, greylight);
+    text-align: left;
+    margin-bottom: 1rem;
   }
+}
+
+.paragraph-subtitle {
+  font-size: 1rem;
+  line-height: 2.6;
+  color: map-deep($colors, greylight);
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: map-deep($colors, greylight);
+  border-bottom: 1px solid map-deep($colors, greylight);
+  text-align: left;
 }

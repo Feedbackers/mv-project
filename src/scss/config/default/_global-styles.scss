@@ -25,13 +25,6 @@ body {
   overflow: hidden;
 }
 
-:-webkit-any(article, aside, nav, section) {
-  h1,
-  h2 {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-  }
-}
 
 .no-phone {
   @include bp(phone) {

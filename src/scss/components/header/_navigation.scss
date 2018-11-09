@@ -1,0 +1,39 @@
+.nav-wrap {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 90rem;
+  margin: 0 auto;
+  &__logo {
+    width: 16rem;
+    height: 11rem;
+  }
+  &__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  &__link {
+    display: flex;
+    text-decoration: none;
+    padding: 1em 2rem;
+    background: map-deep($colors, white);
+    color: map-deep($colors, blue);
+    font-size: 1rem;
+    justify-content: center;
+    &:hover,
+    &:focus,
+    &:active {
+      background:rgba(0,0,0,0.5);
+      transition: all 0.5s;
+    }
+  }
+
+}
